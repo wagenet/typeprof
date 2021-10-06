@@ -668,6 +668,11 @@ module TypeProf
             triggerKind: trigger_kind
           },
         }
+        in {
+          textDocument: { uri:, },
+          position: loc,
+        }
+          trigger_kind = 1
         else
           raise
         end
@@ -698,6 +703,11 @@ module TypeProf
             triggerKind: trigger_kind
           },
         }
+        in {
+          textDocument: { uri:, },
+          position: loc,
+        }
+          trigger_kind = 1
         else
           raise
         end
